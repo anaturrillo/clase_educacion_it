@@ -9,11 +9,12 @@
 		<div class="row">
 			<div class="col">
 				<div class="card">
-					<h5 class="card-header">Ejercicio 4</h5>
+					<h5 class="card-header">Ejercicio 5</h5>
 					<div class="card-body">
-						<h5 class="card-title">Tablas de multiplicar</h5>
+						<h5 class="card-title">Número Armstrong</h5>
 						<p class="card-text">
-							Escribir las tablas de multiplicar del 1 al 10.
+							Escribir un programa que imprima por consola los números Armstrong de 3 dígitos.
+							Un número armstrong es igual a la suma de los cubos de sus dígitos
 						</p>
 						<a href="index.html">volver</a>
 					</div>
@@ -26,10 +27,15 @@
 	<script type="text/javascript">
 
 		for (var i = 1; i < 10; i++) {
-			console.log('-------------- Tabla del ' + i + ' --------------')
-			for (var j = 1; j < 10; j++) {
-				var result = i + ' x ' + j + ' = ' + i*j;
-				console.log(result)
+			for (var j = 0; j < 10; j++) {
+				for (var k = 0; k < 10; k++) {
+					var powerSum = i**3 + j**3 + k**3;
+					var num = i * 100 + j*10 + k;
+					
+					if (powerSum === num) {
+						console.log(num)
+					}
+				}
 			}
 		}
 	</script>
