@@ -21,9 +21,45 @@
 							
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<h5 class="card-header">Ejercicio 1 bis</h5>
+					<div class="card-body">
+						<h5 class="card-title">Saltear números</h5>
+						<p class="card-text">
+							Modificar el programa anterior para que no imprima el 7 ni el 92.
+						</p>
+						<a href="index.html">volver</a>
+					</div>
+				</div>
+							
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript">
 		for (var i = 1; i <= 100; i++) {
+			if (i % 3 === 0 && i % 5 === 0) {
+				console.log('FizzBuzz');
+			} else if (i % 3 === 0) {
+				console.log('Fizz');
+			} else if (i % 5 === 0) {
+				console.log('Buzz');
+			} else {
+				console.log(i)
+			}
+		}
+
+		console.log('-------------------------------------------')
+		console.log('Ejercicio 1 bis')
+
+		for (var i = 1; i <= 100; i++) {
+			if ( i === 7 || i === 92) {
+				console.log('salteo el numero')
+				continue;
+			}
+
 			if (i % 3 === 0 && i % 5 === 0) {
 				console.log('FizzBuzz');
 			} else if (i % 3 === 0) {
